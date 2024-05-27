@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="fondo_pantalla">#fcf8f8</color>
+    <color name="textoCabecera">#ff333e</color>
+    <!--<color name="fondo_cabecera">#ff333e</color>-->
+    <color name="fondoSpinner">#d6d4d4</color>
+    <color name="fondo_tv_plazas">#8a8484</color>
+    <color name="fondotvAforo">#FF000000</color>
+</resources>
