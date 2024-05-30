@@ -33,8 +33,8 @@ public class ObtenerAforo extends AsyncTask<Integer, Void, Integer> {
 
         HttpURLConnection urlConnection = null;
         try {
-          //URL url = new URL("http://192.168.217.191:8080/api/salas/" + salaId + "/aforo");
-            URL url = new URL("http://192.168.18.107:8080/api/salas/" + salaId + "/aforo");
+            URL url = new URL("http://192.168.12.191:8080/api/salas/" + salaId + "/aforo");
+            URL url2 = new URL("http://192.168.18.107:8080/api/salas/" + salaId + "/aforo");
             urlConnection = (HttpURLConnection) url.openConnection();
             urlConnection.setRequestMethod("GET");
 
