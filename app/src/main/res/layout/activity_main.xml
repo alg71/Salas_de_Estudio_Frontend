@@ -61,7 +61,7 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <fragment
+        <androidx.fragment.app.FragmentContainerView
             android:id="@+id/map"
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
@@ -77,7 +77,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
                 android:text="@string/tv_plazas"
                 android:textColor="@color/fondotvAforo"
                 android:textSize="25sp"
