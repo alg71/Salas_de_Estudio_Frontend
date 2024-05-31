@@ -1,5 +1,9 @@
 package es.albertolopez.salas_estudio;
 
+/*Autor: Alberto López Garcia
+Creative commons CC BY-SA 4.0
+https://creativecommons.org/licenses/by-sa/4.0/deed.es*/
+
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.EditText;
