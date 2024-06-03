@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         setContentView(R.layout.activity_main);
 
         // Se agregan salas manualmente a la lista
+        listaSalas.add(new Sala(0, "Seleccione una sala:", 0));
         listaSalas.add(new Sala(1, "SME Alquerías - Aforo total: 50", 50));
         listaSalas.add(new Sala(2, "SME Santomera - Aforo total: 50", 50));
         listaSalas.add(new Sala(3, "SME Cobatillas - Aforo total: 40", 40));
@@ -56,8 +57,12 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 // Obtención del ID de la sala seleccionada
                 int idSala = listaSalas.get(position).getId();
-                // Se crea una instancia de ObtenerAforo y se ejecuta con el ID de la sala
-                new ObtenerAforo(tvAforo).execute(idSala);
+                // Si la sala seleccionada no es la opción por defecto (0), obtener el aforo
+                if (idSala != 0) {
+                    new ObtenerAforo(tvAforo).execute(idSala);
+                } else {
+                    tvAforo.setText("0"); // En caso de valor por defecto, indicar un cero en el TextView
+                }
             }
 
             @Override

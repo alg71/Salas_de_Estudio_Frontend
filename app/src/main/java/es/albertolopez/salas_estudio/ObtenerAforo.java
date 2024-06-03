@@ -27,7 +27,7 @@ public class ObtenerAforo extends AsyncTask<Integer, Void, Integer> {
 
     @Override
     protected Integer doInBackground(Integer... ids) {
-        if (ids.length == 0) {
+        if (ids.length == 0 || ids[0] == 0) {
             return null;
         }
 
@@ -37,9 +37,12 @@ public class ObtenerAforo extends AsyncTask<Integer, Void, Integer> {
 
         HttpURLConnection urlConnection = null;
         try {
-            URL url = new URL("http://192.168.12.191:8080/api/salas/" + salaId + "/aforo");
+            // Siguiente línea para pruebas con red externa o enlace portátil (móvil)
+            //URL url = new URL("http://192.168.71.191:8080/api/salas/" + salaId + "/aforo");
+            // Siguiente línea para pruebas con red local (wifi)
             URL url2 = new URL("http://192.168.18.107:8080/api/salas/" + salaId + "/aforo");
-            urlConnection = (HttpURLConnection) url.openConnection();
+            //urlConnection = (HttpURLConnection) url.openConnection();
+            urlConnection = (HttpURLConnection) url2.openConnection();
             urlConnection.setRequestMethod("GET");
 
             int responseCode = urlConnection.getResponseCode();
