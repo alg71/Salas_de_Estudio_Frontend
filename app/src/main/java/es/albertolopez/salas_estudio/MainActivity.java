@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 if (idSala != 0) {
                     new ObtenerAforo(tvAforo).execute(idSala);
                 } else {
-                    tvAforo.setText("0"); // En caso de valor por defecto, indicar un cero en el TextView
+                    tvAforo.setText("0");
                 }
             }
 
