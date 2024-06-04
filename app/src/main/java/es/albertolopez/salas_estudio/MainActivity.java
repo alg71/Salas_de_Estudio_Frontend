@@ -34,10 +34,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         setContentView(R.layout.activity_main);
 
         // Se agregan salas manualmente a la lista
-        listaSalas.add(new Sala(0, "Seleccione una sala:", 0));
+        listaSalas.add(new Sala(0, "Despliegue para seleccionar una sala:", 0));
         listaSalas.add(new Sala(1, "SME Alquerías - Aforo total: 50", 50));
         listaSalas.add(new Sala(2, "SME Santomera - Aforo total: 50", 50));
-        listaSalas.add(new Sala(3, "SME Cobatillas - Aforo total: 40", 40));
+        listaSalas.add(new Sala(3, "SME Sangonera la Verde - Aforo total: 40", 40));
 
         tvAforo = findViewById(R.id.tvAforo);
         spinnerSalas = findViewById(R.id.spinnerSalas);
@@ -92,8 +92,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         LatLng sala2 = new LatLng(38.06215, -1.04843);
         mMap.addMarker(new MarkerOptions().position(sala2).title("SME Santomera - Aforo total: 50"));
 
-        LatLng sala3 = new LatLng(38.05466, -1.08094);
-        mMap.addMarker(new MarkerOptions().position(sala3).title("SME Cobatillas - Aforo total: 40"));
+        LatLng sala3 = new LatLng(37.93112, -1.21232);
+        mMap.addMarker(new MarkerOptions().position(sala3).title("SME Sangonera la Verde - Aforo total: 40"));
 
         // Configuración de un listener para los marcadores
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
