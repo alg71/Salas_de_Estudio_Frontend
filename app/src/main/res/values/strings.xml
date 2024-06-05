@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Salas_Estudio</string>
+    <string name="app_name">Salas de Estudio</string>
     <string name="tv_cabecera">SALAS DE ESTUDIO</string>
     <!--<string name="tv_subtitulo_cabecera">Salas Municipales de Estudio</string>-->
     <string name="tv_seleccion_sala">Seleccione una sala en la lista:</string>
