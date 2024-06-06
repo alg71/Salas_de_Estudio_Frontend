@@ -17,10 +17,7 @@ import java.net.URL;
 public class ObtenerAforo extends AsyncTask<Integer, Void, Integer> {
 
     private static final String TAG = "ObtenerAforo";
-    private TextView tvAforo;
-
-    private EditText editTextDireccionIP;
-
+    private final TextView tvAforo;
     public ObtenerAforo(TextView tvAforo) {
         this.tvAforo = tvAforo;
     }
