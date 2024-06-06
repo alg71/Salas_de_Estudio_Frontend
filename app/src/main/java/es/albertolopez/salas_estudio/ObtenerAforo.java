@@ -18,6 +18,7 @@ public class ObtenerAforo extends AsyncTask<Integer, Void, Integer> {
 
     private static final String TAG = "ObtenerAforo";
     private final TextView tvAforo;
+
     public ObtenerAforo(TextView tvAforo) {
         this.tvAforo = tvAforo;
     }
