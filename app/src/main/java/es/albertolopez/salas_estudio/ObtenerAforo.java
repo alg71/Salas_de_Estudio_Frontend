@@ -36,12 +36,14 @@ public class ObtenerAforo extends AsyncTask<Integer, Void, Integer> {
 
 
         HttpURLConnection urlConnection = null;
+        HttpURLConnection urlConnection2 = null;
         try {
             // Siguiente línea para pruebas con red externa o enlace portátil (móvil)
-            //URL url = new URL("http://192.168.71.191:8080/api/salas/" + salaId + "/aforo");
+            URL url = new URL("http://192.168.23.191:8080/api/salas/" + salaId + "/aforo");
             // Siguiente línea para pruebas con red local (wifi)
             URL url2 = new URL("http://192.168.18.107:8080/api/salas/" + salaId + "/aforo");
-            //urlConnection = (HttpURLConnection) url.openConnection();
+
+            urlConnection = (HttpURLConnection) url.openConnection();
             urlConnection = (HttpURLConnection) url2.openConnection();
             urlConnection.setRequestMethod("GET");
 
