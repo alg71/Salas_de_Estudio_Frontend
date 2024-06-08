@@ -19,6 +19,7 @@
             android:gravity="center"
             android:text="@string/tv_cabecera"
             android:textColor="@color/textoCabecera"
+            android:background="@color/fondoCabecera"
             android:textSize="35sp"
             android:textStyle="bold" />
 
