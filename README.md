@@ -5,3 +5,6 @@ Presenta al usuario las plazas libres en tiempo real de la sala elegida.
 
 "## Instalación" 
 Descargar y abrir proyecto en Android Studio o en un IDE configurado para ejecutar el emulador si así se prefiere. Ejecutar proyecto en un dispositivo físico.
+
+"## Licencia"
+Creative commons CC BY-SA 4.0 
